@@ -1,44 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-16" />
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rock-Paper-Scissor Game.</title>
+    <title>Rock-Paper-Scissors Edition</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+
     <header>
-      <h1>Rock-Paper-Scissor</h1>
+      <h1>Rock <span>Paper</span> Scissors</h1>
     </header>
-    <main>
+
+    <main class="game-zone">
+      
       <div class="choices">
         <div class="choice" id="Rock">
           <h2>Rock</h2>
-          <h1>🪨</h1>
+          <div class="emoji">🪨</div>
         </div>
         <div class="choice" id="Paper">
-          <h2>paper</h2>
-          <h1>📰</h1>
+          <h2>Paper</h2>
+          <div class="emoji">📰</div>
         </div>
-        <div  class="choice"id="Scissors">
-          <h2>scissor</h2>
-          <h1>✂️</h1>
+        <div class="choice" id="Scissors">
+          <h2>Scissors</h2>
+          <div class="emoji">✂️</div>
         </div>
       </div>
+
       <div class="score-board">
-        <div class="score">
+        <div class="score-card user-card">
             <p id="user-score">0</p>
-            <p>You</p>
+            <p class="player-label">You</p>
         </div>
-        <div class="score">
+        <div class="score-card comp-card">
             <p id="comp-score">0</p>
-            <p>Computer</p>
+            <p class="player-label">Computer</p>
         </div>
       </div>
+
       <div class="msg-container">
-        <p id="msg">Play Your Move.</p>
+        <p id="msg">Play Your Move</p>
       </div>
+
     </main>
+
     <script src="script.js"></script>
   </body>
 </html>
