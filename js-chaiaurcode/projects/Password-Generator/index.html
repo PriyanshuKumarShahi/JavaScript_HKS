@@ -3,17 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Random Password Generator</title>
+    <title>Premium Random Password Generator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Generate a <br><span class="color">Random Password</span></h1>
-    <div class="container">
-        <input type="text"id="Password" placeholder="Random Password" >
-        <img id="copyBtn" src="images/copy.jpeg" alt="Copy">
+
+    <div class="wrapper">
+        <h1>Generate a <br><span class="color">Random Password</span></h1>
+        
+        <div class="container">
+            <input type="text" id="Password" placeholder="Click generate button..." readonly>
+            <div class="copy-box">
+                <img id="copyBtn" src="images/copy.jpeg" alt="Copy">
+            </div>
+        </div>
+        
+        <button id="button">
+            <img src="images/generate.png" alt="">
+            <span>Generate Password</span>
+        </button>
+        
+        <h6>Created by <span class="author">Himanshu 👍🏼</span></h6>
     </div>
-        <button id="button"><img src="images/generate.png" alt="">Generate Password</button>
-    <h6>created by "Himanshu👍🏼"</h6>
+
     <script src="script.js"></script>
-    </body>
+</body>
 </html>
